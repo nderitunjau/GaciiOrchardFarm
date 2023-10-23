@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1036776832958",
+    "project_id": "orchardfarmgacii",
+    "storage_bucket": "orchardfarmgacii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036776832958:android:181b587ed02163178d43ef",
+        "android_client_info": {
+          "package_name": "com.gdff.gaciiorchardfarm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg-x3ofZBpQKqbf6KMAc0SZNSN8pToyTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

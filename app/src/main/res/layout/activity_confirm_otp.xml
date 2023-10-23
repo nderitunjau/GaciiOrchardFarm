@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmOtp">
+
+    <ImageView
+        android:id="@+id/img_confirm_Send"
+        android:layout_width="296dp"
+        android:layout_height="207dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106"
+        app:srcCompat="@drawable/recievotp" />
+
+    <TextView
+        android:id="@+id/tv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP Verification"
+        android:textAlignment="center"
+        android:textSize="40px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_confirm_Send"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/tv_message_confirm"
+        android:layout_width="268dp"
+        android:layout_height="32dp"
+        android:text="Please Enter the code sent to the phone number"
+
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_send"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@+id/tv_send"
+        app:layout_constraintTop_toBottomOf="@+id/tv_send"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_confirm_code"
+        android:layout_width="271dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Code"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_message_confirm"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_confirm_code"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/edt_confirm_code"
+        app:layout_constraintTop_toBottomOf="@+id/edt_confirm_code"
+        app:layout_constraintVertical_bias="0.145" />
+</androidx.constraintlayout.widget.ConstraintLayout>

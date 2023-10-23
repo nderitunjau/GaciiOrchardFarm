@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/img_login_send"
+        android:layout_width="214dp"
+        android:layout_height="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161"
+        app:srcCompat="@drawable/sendicon" />
+
+    <TextView
+        android:id="@+id/tv_login_message"
+        android:layout_width="293dp"
+        android:layout_height="37dp"
+        android:text="We will send you a one time \n Password on this Mobile Number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_login_send"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/tv_mobile_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Mobile Number"
+        android:textColor="#858585"
+        android:textSize="55px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login_message"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_login_phone"
+        android:layout_width="253dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mobile_no"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Button
+        android:id="@+id/btn_login_getOtp"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="124dp"
+        android:text="Get OTP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="@+id/edt_login_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
